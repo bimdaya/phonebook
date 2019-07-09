@@ -46,15 +46,15 @@ const SearchBar = ({onQueryChange, searchValue}) => {
                     size='big'
                     value={searchValue}/>
             </Segment>
-    		{
-        		inputError &&
-                    <Label
-                        basic={true}
-                        color='red'
-                        pointing={true}>
-        				Please enter only alphabetical letters.
-        			</Label>
-            }
+			{
+				inputError &&
+					<Label
+					    basic={true}
+					    color='red'
+					    pointing={true}>
+						Please enter only alphabetical letters.
+					</Label>
+			}
         </>
     );
 }

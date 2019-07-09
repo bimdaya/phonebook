@@ -19,9 +19,9 @@ const Card = ({contact, closeProfile}) => {
                 className='profile_card'>
     			<CloseButton closeProfile={closeProfile}/>
     			<Image
-                    iconSize='massive'
-                    imageSize='medium'
-                    imageSrc={contact.avatar}/>
+					iconSize='massive'
+					imageSize='medium'
+					imageSrc={contact.avatar}/>
     			<ProfileCard.Content textAlign='center'>
     				<ProfileCard.Header className='card_header'>
     					{fullName}
@@ -29,23 +29,23 @@ const Card = ({contact, closeProfile}) => {
     				{
     					(contact.email) &&
                             <ProfileCard.Meta className='card_element'>
-    							<Content
-                                    content={contact.email}
-                                    icon='mail'/>
+							<Content
+							    content={contact.email}
+							    icon='mail'/>
     						</ProfileCard.Meta>
     				}
     				<ProfileCard.Description className='card_element'>
     					{
                             (contact.address) &&
-                            <Content
-                                content={contact.address}
-                                icon='home'/>
+	                            <Content
+	                                content={contact.address}
+	                                icon='home'/>
                         }
-    					{
-    						(contact.phone)
-    							? <Phone phone={contact.phone}/>
-    							: <p>No phone numbers added!</p>
-    					}
+						{
+							(contact.phone)
+								? <Phone phone={contact.phone}/>
+								: <p>No phone numbers added!</p>
+						}
     				</ProfileCard.Description>
     			</ProfileCard.Content>
     		</ProfileCard>

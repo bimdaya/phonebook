@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 const ClearButton = ({onClearAll, disabled}) => {
 	return (
-        <Button
-            basic={true}
-            color='blue'
-            content='Clear'
-            disabled={disabled}
-            onClick={() => onClearAll()}/>
+		<Button
+		    basic={true}
+		    color='blue'
+		    content='Clear'
+		    disabled={disabled}
+		    onClick={() => onClearAll()}/>
     );
 }
 

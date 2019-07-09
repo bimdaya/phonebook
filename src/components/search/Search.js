@@ -53,19 +53,18 @@ const Search = ({contacts, viewSelectedContact}) => {
 
 	return (
         <Grid.Column centered={1} width={5}>
-    		<SearchBar
+            <SearchBar
                 onQueryChange={onQueryChange}
                 searchValue={searchValue}/>
-    		<ContactList
+            <ContactList
                 contacts={filteredConatcts.slice(0, 5)}
                 onContactSelect={onContactSelect}/>
-    		<ClearButton
+            <ClearButton
                 disabled={clearButtonState}
                 onClearAll={onClearAll}/>
-	   </Grid.Column>
+        </Grid.Column>
    );
-
-};
+}
 
 Search.propTypes = {
 	viewSelectedContact: PropTypes.func,

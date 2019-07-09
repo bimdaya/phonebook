@@ -6,8 +6,9 @@ import axios from '../config/axios';
  * @throw {Error}
  */
 export const getAllContacts = () => axios.get('/contacts')
-	.then(response => response.data)
-	.catch((error) => {
+	.then(
+		response => response.data,
+	).catch((error) => {
 		throw new Error(`An error occured while fetching
-			contacts from the server. ${error}`);
+  			contacts from the server. ${error}`);
 	});

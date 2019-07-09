@@ -6,14 +6,14 @@ import Footer from '../../components/footer/Footer';
 import './App.css'
 
 const App = () => (
-	<Grid
+  <Grid
 		centered={true}
 		className='app'
 		padded={true}>
-			<Header user='Bim'/>
-			<Home/>
-			<Footer/>
-	</Grid>
+    <Header user='Bim'/>
+    <Home/>
+    <Footer/>
+  </Grid>
 );
 
 export default App;

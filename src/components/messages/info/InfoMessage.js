@@ -3,13 +3,13 @@ import {Grid, Icon, Message} from 'semantic-ui-react';
 import MessageContent from '../default/MessageContent';
 
 const InfoMessage = ({messageBody, messageHeader}) => {
-	return (
-		<Message info={true}>
-			<MessageContent
+  return (
+    <Message info={true}>
+      <MessageContent
 				messageBody={messageBody}
 				messageHeader={messageHeader}/>
-		</Message>
-	);
+    </Message>
+  );
 }
 
 export default InfoMessage;

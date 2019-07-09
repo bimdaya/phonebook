@@ -4,9 +4,9 @@ import Footer from './Footer';
 
 describe('footer', () => {
 
-	it('should render self', () => {
-		const {container} = render(<Footer/>);
+  it('should render self', () => {
+    const {container} = render(<Footer/>);
 
-		expect(container.querySelector('p')).not.toBeNull();
-	});
+    expect(container.querySelector('p')).not.toBeNull();
+  });
 })

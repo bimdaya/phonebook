@@ -1,14 +1,14 @@
 import {
 	GET_CONTACTS_PENDING,
 	GET_CONTACTS_FULFILLED,
-	GET_CONTACTS_REJECTED,
+	GET_CONTACTS_REJECTED
 } from '../../constants/actions';
 
 const initialState = {
-	data: {},
-	fetching: false,
-	fetched: false,
-	failed: false,
+  data: {},
+  fetching: false,
+  fetched: false,
+  failed: false
 };
 
 /**
@@ -18,34 +18,34 @@ const initialState = {
  * @return {state}
  */
 const getContactsReducer = (state = initialState, action) => {
-	switch (action.type) {
-	case GET_CONTACTS_PENDING:
-		return {
-			...state,
-			data: {},
-			fetching: true,
-			fetched: false,
-			failed: false,
-		};
-	case GET_CONTACTS_FULFILLED:
-		return {
-			...state,
-			data: action.payload,
-			fetching: false,
-			fetched: true,
-			failed: false,
-		};
-	case GET_CONTACTS_REJECTED:
-		return {
-			...state,
-			data: {},
-			fetching: false,
-			fetched: false,
-			failed: true,
-		};
-	default:
-		return state;
-	}
+  switch (action.type) {
+    case GET_CONTACTS_PENDING:
+      return {
+        ...state,
+        data: {},
+        fetching: true,
+        fetched: false,
+        failed: false
+      };
+    case GET_CONTACTS_FULFILLED:
+      return {
+        ...state,
+        data: action.payload,
+        fetching: false,
+        fetched: true,
+        failed: false
+      };
+    case GET_CONTACTS_REJECTED:
+      return {
+        ...state,
+        data: {},
+        fetching: false,
+        fetched: false,
+        failed: true
+      };
+    default:
+      return state;
+  }
 };
 
 export default getContactsReducer;

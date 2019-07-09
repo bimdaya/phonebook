@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => (
 	<Grid.Row className='footer'>
-		<p>created by Bim</p>
+  	<p>created by Bim</p>
 	</Grid.Row>
 );
 

@@ -3,18 +3,18 @@ import {Grid, Icon, Message} from 'semantic-ui-react';
 import MessageContent from '../default/MessageContent';
 
 const LoadingMessage = ({messageBody, messageHeader}) => {
-	return (
-		<Message
+  return (
+    <Message
 			color='teal'
 			icon={true}>
-			<Icon
+      <Icon
 				loading={true}
 				name='circle notched'/>
-			<MessageContent
+      <MessageContent
 				messageBody={messageBody}
 				messageHeader={messageHeader}/>
-		</Message>
-	);
+    </Message>
+  );
 }
 
 export default LoadingMessage;

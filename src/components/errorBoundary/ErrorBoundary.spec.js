@@ -7,11 +7,11 @@ Enzyme.configure({adapter: new Adapter()});
 
 //use Enzyme since react-testing-library can not setState
 describe('ErrorBoundary', () => {
-	it('should render error message when an error occured', () => {
-		const wrapper = shallow(<ErrorBoundary/>);
-		wrapper.setState({hasError: true});
+  it('should render error message when an error occured', () => {
+    const wrapper = shallow(<ErrorBoundary/>);
+    wrapper.setState({hasError: true});
 
-		expect(wrapper.find('h1').text()).toBe('Ooops...Something went wrong.');
-	});
+    expect(wrapper.find('h1').text()).toBe('Ooops...Something went wrong.');
+  });
 
 });

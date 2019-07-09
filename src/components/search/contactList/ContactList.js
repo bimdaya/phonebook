@@ -32,13 +32,9 @@ const ContactList = ({contacts, onContactSelect}) => {
 		)
 	});
 
-	return (
-		<List
-			className='contact_list'
-			size='big'>
-			{contactList}
-		</List>
-	);
+	return (<List className='contact_list' size='big'>
+		{contactList}
+	</List>);
 };
 
 ContactList.propTypes = {

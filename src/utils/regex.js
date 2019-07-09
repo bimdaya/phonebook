@@ -6,14 +6,14 @@
  * @return {object} filtered objects
  */
 export const searchQuery = (query, list, filters) => Array.from(list).filter((item) => {
-	const regex = new RegExp(`^${query}`, 'i');
+  const regex = new RegExp(`^${query}`, 'i');
 
-	for (const filter of filters) {
-		if (regex.test(item[filter])) {
-			return true;
-		}
-	}
-	return false;
+  for (const filter of filters) {
+    if (regex.test(item[filter])) {
+      return true;
+    }
+  }
+  return false;
 });
 
 /**
@@ -22,10 +22,10 @@ export const searchQuery = (query, list, filters) => Array.from(list).filter((it
  * @return {boolean} valid/invalid
  */
 export const validateInputString = (value) => {
-	const regex = new RegExp(/^[a-zA-Z\s]*$/);
+  const regex = new RegExp(/^[a-zA-Z\s]*$/);
 
-	if (regex.test(value)) {
-		return true;
-	}
-	return false;
+  if (regex.test(value)) {
+    return true;
+  }
+  return false;
 };

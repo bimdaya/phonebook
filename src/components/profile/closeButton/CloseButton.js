@@ -4,21 +4,21 @@ import PropTypes from 'prop-types';
 import './CloseButton.css'
 
 const CloseButton = ({closeProfile}) => {
-	return (
-		<div>
-			<Button
-				className='close_button'
-				floated='right'
-				onClick={() => closeProfile()}
-				size='mini'>
-				X
-			</Button>
-		</div>
-	);
+  return (
+    <div>
+      <Button
+        className='close_button'
+        floated='right'
+        onClick={() => closeProfile()}
+        size='mini'>
+        X
+      </Button>
+    </div>
+  );
 };
 
 CloseButton.propTypes = {
-	closeProfile: PropTypes.func
+  closeProfile: PropTypes.func
 }
 
 export default CloseButton;

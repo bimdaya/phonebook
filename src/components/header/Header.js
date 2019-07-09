@@ -4,26 +4,26 @@ import {Header as Heading, Grid, Icon} from 'semantic-ui-react';
 import './Header.css'
 
 const Header = ({user}) => {
-	const title = `${user}'s Phone Book`;
+  const title = `${user}'s Phone Book`;
 
-	return (
-		<Grid.Row className='header_grid'>
-			<Heading
+  return (
+    <Grid.Row className='header_grid'>
+      <Heading
 				as='h1'
 				inverted={true}>
-				<Icon
+        <Icon
 					circular={true}
 					name='call'/>
-				<Heading.Content>
-					{title}
-				</Heading.Content>
-			</Heading>
-		</Grid.Row>
-	)
+        <Heading.Content>
+          {title}
+        </Heading.Content>
+      </Heading>
+    </Grid.Row>
+  )
 };
 
 Header.propTypes = {
-	user: PropTypes.string.isRequired
+  user: PropTypes.string.isRequired
 };
 
 export default Header;

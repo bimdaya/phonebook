@@ -3,33 +3,33 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: "./src/index.js",
-	mode: "development",
-	output: {
-		publicPath: path.join(__dirname, 'dist'),
-		filename: "[name].js"
-	},
-	plugins: [
-		new HtmlWebPackPlugin({template: "./src/index.html", filename: "./index.html"}),
-		new webpack.HotModuleReplacementPlugin()
-	],
-	module: {
-		rules: [
-			{
-				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				use: {
-					loader: "babel-loader"
-				}
-			}, {
-				test: /\.s?css$/,
-				use: ['style-loader', 'css-loader', 'sass-loader']
-			}
-		]
-	},
-	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
-		compress: true,
-		port: 9000
-	}
+  entry: "./src/index.js",
+  mode: "development",
+  output: {
+    publicPath: path.join(__dirname, 'dist'),
+    filename: "[name].js"
+  },
+  plugins: [
+    new HtmlWebPackPlugin({template: "./src/index.html", filename: "./index.html"}),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }, {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  }
 };

@@ -3,7 +3,6 @@
   "parser": "babel-eslint",
   "rules": {
       "indent": [2, "tab"],
-      "no-tabs": 0,
       "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
       "import/prefer-default-export": "off"
   }

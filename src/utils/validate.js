@@ -1,4 +1,4 @@
-import {validateInputString} from './regex';
+import { validateInputString } from './regex';
 
 /**
  * Validate input string to only accept letters
@@ -6,16 +6,16 @@ import {validateInputString} from './regex';
  * @return {boolean} valid/invalid
  */
 export const validateSearchInput = (value, keyCode) => {
-  if (validateInputString(value) || !value) {
-    return true;
-  }
+	if (validateInputString(value) || !value) {
+		return true;
+	}
 
-  // includes space, delete, arrow keys, shift, etc.
-  if (keyCode >= 8 && keyCode <= 46) {
-    return true;
-  }
+	// includes space, delete, arrow keys, shift, etc.
+	if (keyCode >= 8 && keyCode <= 46) {
+		return true;
+	}
 
-  return false;
+	return false;
 };
 
 /**
@@ -25,13 +25,13 @@ export const validateSearchInput = (value, keyCode) => {
  * @return {string} fullname
  */
 export const getDisplayName = (firstName, lastName) => {
-  if (firstName) {
-    return `${firstName} ${lastName}`;
-  }
+	if (firstName) {
+		return `${firstName} ${lastName}`;
+	}
 
-  if (lastName) {
-    return lastName;
-  }
+	if (lastName) {
+		return lastName;
+	}
 
-  return 'Anonymous';
+	return 'Anonymous';
 };

@@ -9,6 +9,8 @@ export const getAllContacts = () => axios.get('/contacts')
 	.then(
 		response => response.data,
 	).catch((error) => {
-		throw new Error(`An error occured while fetching
-  			contacts from the server. ${error}`);
+		throw new Error(
+			`An error occured while fetching
+  			contacts from the server. ${error}`,
+		);
 	});

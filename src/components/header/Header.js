@@ -8,12 +8,8 @@ const Header = ({user}) => {
 
   return (
     <Grid.Row className='header_grid'>
-      <Heading
-				as='h1'
-				inverted={true}>
-        <Icon
-					circular={true}
-					name='call'/>
+      <Heading as='h1' inverted={true}>
+        <Icon circular={true} name='call'/>
         <Heading.Content>
           {title}
         </Heading.Content>

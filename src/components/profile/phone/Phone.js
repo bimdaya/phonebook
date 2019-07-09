@@ -41,9 +41,9 @@ const Phone = ({phone}) => {
 
   return (
     <List>
-    	{phoneNumberList}
-  	</List>
-	);
+      {phoneNumberList}
+    </List>
+  );
 };
 
 Phone.propTypes = {

@@ -10,8 +10,9 @@ const SearchBar = ({onQueryChange, searchValue}) => {
   const [inputError, setInputError] = useState(false);
 
   const onValueChange = (e) => {
-    const query = e.target.value
-      ? e.target.value
+    const value = e.target.value;
+    const query = value
+      ? value
       : '';
 
     if (validateInputString(query)) {
@@ -31,28 +32,31 @@ const SearchBar = ({onQueryChange, searchValue}) => {
 
 	return (
 		<>
-			<Segment
-				color='black'
-				className='search_bar'>
-				<Input
-					error={inputError}
-					fluid={true}
-					focus={true}
-					icon='search'
-					inverted={true}
-					onChange={e => onValueChange(e)}
-					onKeyDown={e => validateInput(e)}
-					placeholder='Type a name...'
-					size='big'
-					value={searchValue}/>
-			</Segment>
-			{
-			inputError && <Label basic={true} color='red' pointing={true}>
-					Please enter only alphabetical letters.
-				</Label>
-			}
-		< />
-	);
+      <Segment
+        color='black'
+        className='search_bar'>
+        <Input
+          error={inputError}
+          fluid={true}
+          focus={true}
+          icon='search'
+          inverted={true}
+          onChange={e => onValueChange(e)}
+          onKeyDown={e => validateInput(e)}
+          placeholder='Type a name...'
+          size='big'
+          value={searchValue}/>
+      </Segment>
+      {
+        inputError &&
+          <Label basic={true}
+            color='red'
+            pointing={true}>
+            Please enter only alphabetical letters.
+          </Label>
+      }
+    </>
+  );
 }
 
 SearchBar.defaultProps = {

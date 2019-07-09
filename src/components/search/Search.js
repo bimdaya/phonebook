@@ -43,25 +43,25 @@ const Search = ({contacts, viewSelectedContact}) => {
 
 	if (contacts.length === 0) {
 		return (
-            <Grid.Column width={4}>
-                <InfoMessage
-                    messageBody={NO_CONTACTS_INFO_MESSAGE_BODY}
-                    messageHeader={NO_CONTACTS_INFO_MESSAGE_HEADER}/>
-           </Grid.Column>
-       );
-	}
+      <Grid.Column width={4}>
+        <InfoMessage
+          messageBody={NO_CONTACTS_INFO_MESSAGE_BODY}
+          messageHeader={NO_CONTACTS_INFO_MESSAGE_HEADER}/>
+      </Grid.Column>
+    );
+  }
 
   return (
     <Grid.Column centered={1} width={5}>
         <SearchBar
-    	onQueryChange={onQueryChange}
-    	searchValue={searchValue}/>
+          onQueryChange={onQueryChange}
+          searchValue={searchValue}/>
         <ContactList
-    	contacts={filteredConatcts.slice(0, 5)}
-    	onContactSelect={onContactSelect}/>
+          contacts={filteredConatcts.slice(0, 5)}
+          onContactSelect={onContactSelect}/>
         <ClearButton
-    	disabled={clearButtonState}
-    	onClearAll={onClearAll}/>
+          disabled={clearButtonState}
+          onClearAll={onClearAll}/>
     </Grid.Column>
   );
 }

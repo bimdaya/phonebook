@@ -27,16 +27,20 @@ const Card = ({contact, closeProfile}) => {
             {fullName}
           </ProfileCard.Header>
           {
-            (contact.email) && <ProfileCard.Meta className='card_element'>
+            (contact.email) &&
+              <ProfileCard.Meta className='card_element'>
                 <Content
                   content={contact.email}
                   icon='mail'/>
               </ProfileCard.Meta>
           }
           <ProfileCard.Description className='card_element'>
-            {(contact.address) && <Content
-              content={contact.address}
-              icon='home'/>}
+            {
+              (contact.address) &&
+                <Content
+                  content={contact.address}
+                  icon='home'/>
+            }
             {
               (contact.phone)
                 ? <Phone phone={contact.phone}/>

@@ -7,9 +7,9 @@ import {
 } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-import { getDisplayName } from '../../../utils/validate'
+import { getDisplayName } from '../../../utils/validate';
 import Phone from '../phone/Phone';
-import Image from '../image/Image';
+import Image from '../../image/Image';
 import Content from '../content/Content';
 import CloseButton from '../closeButton/CloseButton';
 import './Card.css';
@@ -24,7 +24,10 @@ const Card = ({contact, closeProfile}) => {
                 centered
                 className='profile_card'>
                 <CloseButton closeProfile={closeProfile} />
-                <Image imageSrc={contact.avatar} />
+                <Image
+                    iconSize='massive'
+                    imageSize='medium'
+                    imageSrc={contact.avatar} />
                 <ProfileCard.Content
                     textAlign='center'>
                     <ProfileCard.Header className='card_header'>

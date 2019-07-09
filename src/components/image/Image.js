@@ -19,7 +19,7 @@ const Image = ({imageSrc, imageSize, iconSize}) => {
           size={iconSize}/>
     }
     < />
-	);
+  );
 };
 
 Image.defaultProps = {

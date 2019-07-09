@@ -40,7 +40,7 @@ const Phone = ({phone}) => {
   });
 
   return (
-		<List>
+    <List>
     	{phoneNumberList}
   	</List>
 	);

@@ -51,19 +51,19 @@ const Search = ({contacts, viewSelectedContact}) => {
        );
 	}
 
-	return (
-        <Grid.Column centered={1} width={5}>
-            <SearchBar
-                onQueryChange={onQueryChange}
-                searchValue={searchValue}/>
-            <ContactList
-                contacts={filteredConatcts.slice(0, 5)}
-                onContactSelect={onContactSelect}/>
-            <ClearButton
-                disabled={clearButtonState}
-                onClearAll={onClearAll}/>
-        </Grid.Column>
-   );
+  return (
+    <Grid.Column centered={1} width={5}>
+        <SearchBar
+    	onQueryChange={onQueryChange}
+    	searchValue={searchValue}/>
+        <ContactList
+    	contacts={filteredConatcts.slice(0, 5)}
+    	onContactSelect={onContactSelect}/>
+        <ClearButton
+    	disabled={clearButtonState}
+    	onClearAll={onClearAll}/>
+    </Grid.Column>
+  );
 }
 
 Search.propTypes = {

@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {
 	Grid,
 	Icon,
-	Image,
 	List
 } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
+import Image from '../../image/Image';
 import './ContactList.css';
+import { getDisplayName } from '../../../utils/validate';
 
 const ContactList = ({contacts, onContactSelect}) => {
 
@@ -16,31 +17,20 @@ const ContactList = ({contacts, onContactSelect}) => {
 	}
 
 	const contactList = contacts.map(contact => {
+		const fullName = getDisplayName(contact.first_name, contact.last_name);
+
 		return (
             <List.Item
 				className='list_item'
 				key={contact.contact_id}
 				onClick={e => onItemClick(contact)}>
-				{
-					contact.avatar ?
-					<Image
-	                    avatar
-	                    circular
-	                    size='mini'
-	                    src={contact.avatar}/> :
-					<Icon
-						size='big'
-						name='user circle'/>
-				}
+				<Image
+                    iconSize='big'
+                    imageSize='mini'
+                    imageSrc={contact.avatar} />
                 <List.Content verticalAlign='middle'>
     				<List.Header className='contact_list_header'>
-						{
-                            (contact.first_name) ?
-                                `${contact.first_name} ${contact.last_name}` :
-                                (contact.last_name) ?
-                                    `${contact.last_name}` :
-                                    'Anonymous'
-                        }
+						{ fullName }
                     </List.Header>
     			</List.Content>
 		    </List.Item>

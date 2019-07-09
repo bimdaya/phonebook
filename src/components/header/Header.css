@@ -1,9 +1,9 @@
-.header {
-  margin-top: 2rem;
+.h1-header {
+  margin-top: 2rem !important;
 }
 
-.header_grid {
+.grid-row-header {
   background-color: #00008b;
-  font-size: '-webkit-xxx-large';
+  font-size: -webkit-xxx-large;
   height: 20%;
 }

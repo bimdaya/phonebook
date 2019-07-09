@@ -34,7 +34,7 @@ const SearchBar = ({onQueryChange, searchValue}) => {
 		<>
       <Segment
         color='black'
-        className='search_bar'>
+        className='search-bar-contacts'>
         <Input
           error={inputError}
           fluid={true}

@@ -4,7 +4,7 @@ import {Grid} from 'semantic-ui-react';
 import './Footer.css'
 
 const Footer = () => (
-	<Grid.Row className='footer'>
+	<Grid.Row className='grid-row-footer'>
 	<p>created by Bim</p>
 	</Grid.Row>
 );

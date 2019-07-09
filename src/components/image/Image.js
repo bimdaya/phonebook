@@ -7,18 +7,18 @@ const Image = ({imageSrc, imageSize, iconSize}) => {
   return (
     <>
       {
-      imageSrc
-        ?
-          <Img
-            centered={true}
-            circular={true}
-            size={imageSize}
-            src={imageSrc}/>
-        :
-          <Icon
-            className='profile_icon'
-            name='user circle'
-            size={iconSize}/>
+        imageSrc
+          ?
+            <Img
+              centered={true}
+              circular={true}
+              size={imageSize}
+              src={imageSrc}/>
+          :
+            <Icon
+              className='icon-profile'
+              name='user circle'
+              size={iconSize}/>
       }
     < />
   );

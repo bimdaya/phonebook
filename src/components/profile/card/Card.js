@@ -16,25 +16,25 @@ const Card = ({contact, closeProfile}) => {
     <Grid.Column width={6}>
       <ProfileCard
         centered={true}
-        className='profile_card'>
+        className='card-profile'>
         <CloseButton closeProfile={closeProfile}/>
         <Image
           iconSize='massive'
           imageSize='medium'
           imageSrc={contact.avatar}/>
         <ProfileCard.Content textAlign='center'>
-          <ProfileCard.Header className='card_header'>
+          <ProfileCard.Header className='card-header'>
             {fullName}
           </ProfileCard.Header>
           {
             (contact.email) &&
-              <ProfileCard.Meta className='card_element'>
+              <ProfileCard.Meta className='card-content'>
                 <Content
                   content={contact.email}
                   icon='mail'/>
               </ProfileCard.Meta>
           }
-          <ProfileCard.Description className='card_element'>
+          <ProfileCard.Description className='card-content'>
             {
               (contact.address) &&
                 <Content

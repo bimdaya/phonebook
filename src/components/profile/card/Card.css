@@ -1,13 +1,13 @@
-.profile_card {
+.card-profile {
   height: auto;
   width: 88%;
 }
 
-.card_header {
+.card-header {
   font-size: 2vw !important;
 }
 
-.card_element {
+.card-content {
   font-size: 1vw !important;
   color: #000000 !important;
 }

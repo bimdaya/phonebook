@@ -7,7 +7,7 @@ const CloseButton = ({closeProfile}) => {
   return (
     <div>
       <Button
-        className='close_button'
+        className='btn-close'
         floated='right'
         onClick={() => closeProfile()}
         size='mini'>

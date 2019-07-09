@@ -7,9 +7,14 @@ const Header = ({user}) => {
   const title = `${user}'s Phone Book`;
 
   return (
-    <Grid.Row className='header_grid'>
-      <Heading as='h1' inverted={true}>
-        <Icon circular={true} name='call'/>
+    <Grid.Row className='grid-row-header'>
+      <Heading
+        as='h1'
+        className='h1-header'
+        inverted={true}>
+        <Icon
+          circular={true}
+          name='call'/>
         <Heading.Content>
           {title}
         </Heading.Content>

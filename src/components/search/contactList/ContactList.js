@@ -16,7 +16,7 @@ const ContactList = ({contacts, onContactSelect}) => {
 
     return (
       <List.Item
-        className='list_item'
+        className='list-item-contact'
         key={contact.contact_id}
         onClick={e => onItemClick(contact)}>
         <Image
@@ -24,7 +24,7 @@ const ContactList = ({contacts, onContactSelect}) => {
 					imageSize='mini'
 					imageSrc={contact.avatar}/>
         <List.Content verticalAlign='middle'>
-          <List.Header className='contact_list_header'>
+          <List.Header className='list-header-contact'>
             {fullName}
           </List.Header>
         </List.Content>
@@ -34,7 +34,7 @@ const ContactList = ({contacts, onContactSelect}) => {
 
   return (
 		<List
-			className='contact_list'
+			className='list-contact'
 			size='big'>
     	{contactList}
   	</List>

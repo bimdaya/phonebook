@@ -91,7 +91,7 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-	contacts: PropTypes.object.isRequired,
+    contacts: PropTypes.object.isRequired,
     getAllContacts: PropTypes.func.isRequired
 };
 

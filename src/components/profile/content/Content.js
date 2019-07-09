@@ -1,14 +1,14 @@
 import React from 'react';
-import { Icon } from 'semantic-ui-react';
+import {Icon} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
 const Content = ({content, icon}) => {
 	return (
 		<p>
-			{
-				icon &&
-				<Icon name={icon} />
-			}
+		{
+			icon &&
+				<Icon name={icon}/>
+		}
 			<span>
 				{content}
 			</span>

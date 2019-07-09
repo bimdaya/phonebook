@@ -1,23 +1,19 @@
 import React from 'react';
-import {
-	Icon,
-	Image as Img
-} from 'semantic-ui-react';
+import {Icon, Image as Img} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-
-import './Image.css'
+import './Image.css';
 
 const Image = ({imageSrc, imageSize, iconSize}) => {
 	return (
 		<>
 			{
-				imageSrc ?
-					<Img
-						centered
-						circular
+				imageSrc
+					? <Img
+						centered={true}
+						circular={true}
 						size={imageSize}
-						src={imageSrc}/> :
-					<Icon
+						src={imageSrc}/>
+					: <Icon
 						className='profile_icon'
 						name='user circle'
 						size={iconSize}/>

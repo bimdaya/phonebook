@@ -1,18 +1,13 @@
 import React from 'react';
-import {
-	Grid,
-	Icon,
-	Message
-} from 'semantic-ui-react';
-
+import {Grid, Icon, Message} from 'semantic-ui-react';
 import MessageContent from '../default/MessageContent';
 
-const InfoMessage = ({ messageBody, messageHeader }) => {
+const InfoMessage = ({messageBody, messageHeader}) => {
 	return (
-		<Message info >
+		<Message info={true}>
 			<MessageContent
 				messageBody={messageBody}
-				messageHeader={messageHeader} />
+				messageHeader={messageHeader}/>
 		</Message>
 	);
 }

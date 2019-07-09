@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import {Button} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-
 import './CloseButton.css'
 
 const CloseButton = ({closeProfile}) => {

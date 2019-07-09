@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'semantic-ui-react';
-
+import {Grid} from 'semantic-ui-react';
 import './Footer.css'
 
 const Footer = () => (

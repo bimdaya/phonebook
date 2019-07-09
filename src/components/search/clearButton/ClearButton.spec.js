@@ -1,6 +1,5 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react';
-
 import ClearButton from './ClearButton';
 
 describe('ClearButton', () => {
@@ -32,8 +31,8 @@ describe('ClearButton', () => {
 			disabled: false
 		};
 
-		const {container} = render(<ClearButton {...props} />);
+		const {container} = render(<ClearButton {...props}/>);
 		fireEvent.click(container.querySelector('button'));
-  		expect(props.onClearAll).toHaveBeenCalled();
+		expect(props.onClearAll).toHaveBeenCalled();
 	});
 })

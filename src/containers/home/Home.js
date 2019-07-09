@@ -1,57 +1,51 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { Grid } from 'semantic-ui-react';
-
+import {connect} from 'react-redux';
+import {Grid} from 'semantic-ui-react';
 import Search from '../../components/search/Search';
 import Profile from '../../components/profile/card/Card';
 import LoadingMessage from '../../components/messages/loading/LoadingMessage';
 import ErrorMessage from '../../components/messages/error/ErrorMessage';
-
 import {
     CONTENT_FETCHING_MESSAGE_HEADER,
     CONTENT_FETCHING_MESSAGE_BODY,
     CONTENT_FETCHING_FAILED_MESSAGE_HEADER,
     CONTENT_FETCHING_FAILED_MESSAGE_BODY
 } from '../../constants/messages';
-import { getAllContactsAction } from '../../actions/contacts';
+import {getAllContactsAction} from '../../actions/contacts';
 import './Home.css'
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
+	constructor(props) {
+		super(props);
 
-        this.state = {
-            selectedContact: null
-        };
-    }
+		this.state = {
+			selectedContact: null
+		};
+	}
 
-    componentDidMount() {
-        this.props.getAllContacts();
-    }
+	componentDidMount() {
+		this.props.getAllContacts();
+	}
 
-    viewSelectedContact = (contact) => {
-        this.setState({
-            selectedContact: contact
-        });
-    }
+	viewSelectedContact = (contact) => {
+		this.setState({selectedContact: contact});
+	}
 
-    onClearAll = () => {
-        this.setState({
-            selectedContact: null
-        });
-    }
+	onClearAll = () => {
+		this.setState({selectedContact: null});
+	}
 
-    closeProfile = () => {
-        this.onClearAll()
-    }
+	closeProfile = () => {
+		this.onClearAll()
+	}
 
 	render() {
-        if (this.props.contacts.fetched) {
-            return (
+		if (this.props.contacts.fetched) {
+			return (
                 <Grid.Row
                     className='home'
-                    divided>
+                    divided={true}>
                     <Search
                         onClearAll={this.onClearAll}
                         contacts={this.props.contacts.data}
@@ -62,12 +56,11 @@ class Home extends React.Component {
                                 closeProfile={this.closeProfile}
                                 contact={this.state.selectedContact}/>
                     }
-                </Grid.Row>
-            );
-        }
+                </Grid.Row>);
+		}
 
-        if (this.props.contacts.failed) {
-            return (
+		if (this.props.contacts.failed) {
+			return (
                 <Grid.Column
                     className='home'
                     width={6}>
@@ -76,9 +69,9 @@ class Home extends React.Component {
                         messageHeader={CONTENT_FETCHING_FAILED_MESSAGE_HEADER}/>
                 </Grid.Column>
             );
-        }
+		}
 
-        return (
+		return (
             <Grid.Column
                 className='home'
                 width={6}>
@@ -91,20 +84,17 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-    contacts: PropTypes.object.isRequired,
-    getAllContacts: PropTypes.func.isRequired
+	contacts: PropTypes.object.isRequired,
+	getAllContacts: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
 	const contacts = state.contacts;
-	return { contacts };
+	return {contacts};
 };
 
 const mapDispatchToProps = dispatch => ({
 	getAllContacts: () => dispatch(getAllContactsAction())
 });
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

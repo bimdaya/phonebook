@@ -1,28 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-	Header as Heading,
-	Grid,
-	Icon
-} from 'semantic-ui-react';
-
+import {Header as Heading, Grid, Icon} from 'semantic-ui-react';
 import './Header.css'
 
-const Header = ({ user }) => {
+const Header = ({user}) => {
 	const title = `${user}'s Phone Book`;
 
 	return (
 		<Grid.Row className='header_grid'>
 			<Heading
 				as='h1'
-				inverted>
+				inverted={true}>
 				<Icon
-					circular
-					name='call' />
+					circular={true}
+					name='call'/>
 				<Heading.Content>
 					{title}
 				</Heading.Content>
-		    </Heading>
+			</Heading>
 		</Grid.Row>
 	)
 };

@@ -1,5 +1,3 @@
-// Action types
-
 // Get contacts
 export const GET_CONTACTS = 'GET_CONTACTS';
 export const GET_CONTACTS_PENDING = 'GET_CONTACTS_PENDING';

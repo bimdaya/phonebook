@@ -1,6 +1,5 @@
 import React from 'react';
 import {render} from '@testing-library/react';
-
 import Card from './Card';
 
 describe('Card', () => {
@@ -10,9 +9,13 @@ describe('Card', () => {
 		"last_name": "Dayananda",
 		"email": "bim@gmail.com",
 		"phone": [
-			{"mobile": "123456789"},
-			{"work": "123456789"},
-			{"home" : "123456789"}
+			{
+				"mobile": "123456789"
+			}, {
+				"work": "123456789"
+			}, {
+				"home": "123456789"
+			}
 		],
 		"address": "TLL",
 		"avatar": "https://react.semantic-ui.com/images/avatar/small/rachel.png"

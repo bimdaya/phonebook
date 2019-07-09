@@ -1,20 +1,16 @@
 import React from 'react';
-import {
-    Button,
-    Grid,
-    Segment
-} from 'semantic-ui-react';
+import {Button, Grid, Segment} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
 const ClearButton = ({onClearAll, disabled}) => {
-    return (
+	return (
         <Button
-			basic
-			color='blue'
-			content='Clear'
+            basic={true}
+            color='blue'
+            content='Clear'
             disabled={disabled}
-			onClick={() => onClearAll()} />
-    )
+            onClick={() => onClearAll()}/>
+    );
 }
 
 ClearButton.defaultProps = {

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Message } from 'semantic-ui-react';
+import {Message} from 'semantic-ui-react';
 
-const MessageContent = ({ messageBody, messageHeader }) => {
+const MessageContent = ({messageBody, messageHeader}) => {
 	return (
 		<Message.Content>
 			{
@@ -17,7 +17,6 @@ const MessageContent = ({ messageBody, messageHeader }) => {
 		</Message.Content>
 	);
 }
-
 
 MessageContent.defaultProps = {
 	messageBody: 'You have one message here...'

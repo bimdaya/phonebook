@@ -1,6 +1,5 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react';
-
 import CloseButton from './CloseButton';
 
 describe('CloseButton', () => {
@@ -21,10 +20,10 @@ describe('CloseButton', () => {
 	});
 
 	it("calls the closeProfile function when the button is clicked", () => {
-		const {container} = render(<CloseButton {...props} />);
-		
+		const {container} = render(<CloseButton {...props}/>);
+
 		fireEvent.click(container.querySelector('button'));
-  		expect(props.closeProfile).toHaveBeenCalled();
+		expect(props.closeProfile).toHaveBeenCalled();
 	});
 
 })

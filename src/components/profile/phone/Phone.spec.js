@@ -1,15 +1,18 @@
 import React from 'react';
 import {render} from '@testing-library/react';
-
 import Phone from './Phone';
 
 describe('Phone', () => {
 	it('should render phone number list', () => {
 		const props = {
 			phone: [
-				{'mobile': '123456789'},
-				{'work': '123456789'},
-				{'home': '123456789'}
+				{
+					'mobile': '123456789'
+				}, {
+					'work': '123456789'
+				}, {
+					'home': '123456789'
+				}
 			]
 		};
 
@@ -21,9 +24,13 @@ describe('Phone', () => {
 	it('should render phone number list items', () => {
 		const props = {
 			phone: [
-				{'mobile': '123456789'},
-				{'work': '123456789'},
-				{'home': '123456789'}
+				{
+					'mobile': '123456789'
+				}, {
+					'work': '123456789'
+				}, {
+					'home': '123456789'
+				}
 			]
 		};
 
@@ -35,9 +42,13 @@ describe('Phone', () => {
 	it('should render phone number list items', () => {
 		const props = {
 			phone: [
-				{'mobile': '123456789'},
-				{'work': '123456789'},
-				{'home': '123456789'}
+				{
+					'mobile': '123456789'
+				}, {
+					'work': '123456789'
+				}, {
+					'home': '123456789'
+				}
 			]
 		};
 
@@ -49,7 +60,9 @@ describe('Phone', () => {
 	it('should render phone number with icon', () => {
 		const props = {
 			phone: [
-				{'mobile': '123456789'}
+				{
+					'mobile': '123456789'
+				}
 			]
 		};
 
@@ -61,7 +74,9 @@ describe('Phone', () => {
 	it('should render phone number with type', () => {
 		const props = {
 			phone: [
-				{'mobile': '123456789'}
+				{
+					'mobile': '123456789'
+				}
 			]
 		};
 

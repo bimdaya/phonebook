@@ -10,7 +10,7 @@ describe('CloseButton', () => {
   it('should render close button', () => {
     const {container} = render(<CloseButton {...props}/>);
 
-    expect(container.querySelector('.close_button')).not.toBeNull();
+    expect(container.querySelector('.btn-close')).not.toBeNull();
   });
 
   it('should render close button with "X"', () => {

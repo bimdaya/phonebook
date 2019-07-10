@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 import {Grid} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import ClearButton from './clearButton/ClearButton';
-import SearchBar from './searchBar/SearchBar';
-import ContactList from './contactList/ContactList';
-import InfoMessage from '../messages/info/InfoMessage';
+import ClearButton from '../clearButton/ClearButton';
+import SearchBar from '../searchBar/SearchBar';
+import ContactList from '../contactList/ContactList';
+import InfoMessage from '../../messages/info/InfoMessage';
 import {
     NO_CONTACTS_INFO_MESSAGE_BODY,
     NO_CONTACTS_INFO_MESSAGE_HEADER
-} from '../../constants/messages';
-import {searchQuery} from '../../utils/regex';
+} from '../../../constants/messages';
+import {searchQuery} from '../../../utils/regex';
 
 const Search = ({contacts, viewSelectedContact}) => {
 

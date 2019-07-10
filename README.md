@@ -1,45 +1,45 @@
 # Phonebook
 
-### Features
+## Features
 
 - Search contacts retrieved from json-server
 
-### Prerequisites
+## Prerequisites
 
 #### Node.js
-`$ node --version`
-v10.15.3 or above
+>`$ node --version`\
+>v10.15.3 or above
 
 #### npm 
-`$ npm --version`
-6.4.1 or above
+>`$ npm --version`\
+>6.4.1 or above
 
 ## Installing and running
 
 - Clone phonebook app
-`git clone https://github.com/bud93411/phonebook.git`
-`cd phonebook`
+>`git clone https://github.com/bud93411/phonebook.git`\
+>`cd phonebook`
 
 - Install dependencies
-`npm install`
+>`npm install`
 
 - Run json-server
-`json-server --watch ./public/db.json --port 4000`
+>`json-server --watch ./public/db.json --port 4000`
 
-##### Dev mode
+#### Dev mode
 - For initial build
-`npm run build`
+>`npm run build`
 
 - Start the app in dev mode(Hot reloading is enabled)
-`npm run dev`
+>`npm run dev`
 
-##### Prod mode
+#### Prod mode
 
 - Build and run the app
-`npm start`
+>`npm start`
 
 #### To run test cases
-`npm run test`
+>`npm run test`
 
 #### ESLint
-`npm run lint`
+>`npm run lint`

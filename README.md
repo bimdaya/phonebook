@@ -30,6 +30,7 @@
 >`json-server --watch ./public/db.json --port 4000`
 
 On a seperate terminal,
+>`cd phonebook`
 
 #### Dev mode
 - For initial build

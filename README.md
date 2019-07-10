@@ -21,7 +21,10 @@
 >`cd phonebook`
 
 - Install dependencies
->`npm install`
+>`npm install`npm install -g json-server
+
+- Install json-server
+>`npm install -g json-server`
 
 - Run json-server
 >`json-server --watch ./public/db.json --port 4000`

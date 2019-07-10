@@ -1,8 +1,9 @@
 import { validateInputString } from './regex';
 
 /**
- * Validate input string to only accept letters
+ * Validate input to accept letters or valid key codes
  * @param {string} value input value
+ * @param {string} keyCode key code
  * @return {boolean} valid/invalid
  */
 export const validateSearchInput = (value, keyCode) => {

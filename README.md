@@ -21,7 +21,7 @@
 >`cd phonebook`
 
 - Install dependencies
->`npm install`npm install -g json-server
+>`npm install`
 
 - Install json-server
 >`npm install -g json-server`

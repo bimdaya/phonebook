@@ -10,7 +10,7 @@
 `git clone https://github.com/bud93411/phonebook.git`
 
 - Install dependencies
-`$npm install`
+`npm install`
 
 - Run json-server
 `json-server --watch ./public/db.json --port 4000`

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Grid} from 'semantic-ui-react';
-import Search from '../../components/search/Search';
+import Search from '../../components/search/search/Search';
 import Profile from '../../components/profile/card/Card';
 import LoadingMessage from '../../components/messages/loading/LoadingMessage';
 import ErrorMessage from '../../components/messages/error/ErrorMessage';
@@ -49,9 +49,10 @@ class Home extends React.Component {
             contacts={this.props.contacts.data}
             viewSelectedContact={this.viewSelectedContact}/>
             {
-              this.state.selectedContact && <Profile
-                closeProfile={this.closeProfile}
-                contact={this.state.selectedContact}/>
+              this.state.selectedContact &&
+                <Profile
+                  closeProfile={this.closeProfile}
+                  contact={this.state.selectedContact}/>
             }
         </Grid.Row>
       );
@@ -59,7 +60,7 @@ class Home extends React.Component {
 
     if (this.props.contacts.failed) {
       return (
-        <Grid.Column className='home' width={6}>
+        <Grid.Column className='error' width={6}>
           <ErrorMessage
             messageBody={CONTENT_FETCHING_FAILED_MESSAGE_BODY}
             messageHeader={CONTENT_FETCHING_FAILED_MESSAGE_HEADER}/>
@@ -68,7 +69,7 @@ class Home extends React.Component {
     }
 
     return (
-      <Grid.Column className='home' width={6}>
+      <Grid.Column className='info' width={6}>
         <LoadingMessage
           messageBody={CONTENT_FETCHING_MESSAGE_BODY}
           messageHeader={CONTENT_FETCHING_MESSAGE_HEADER}/>

@@ -29,6 +29,8 @@
 - Run json-server
 >`json-server --watch ./public/db.json --port 4000`
 
+On a seperate terminal,
+
 #### Dev mode
 - For initial build
 >`npm run build`

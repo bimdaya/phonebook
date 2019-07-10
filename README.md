@@ -4,7 +4,7 @@
 
 - Search contacts retrieved from json-server
 
-##Installing and running
+## Installing and running
 
 - Clone phonebook app
 `git clone https://github.com/bud93411/phonebook.git`
@@ -15,20 +15,20 @@
 - Run json-server
 `json-server --watch ./public/db.json --port 4000`
 
-#####Dev mode
+##### Dev mode
 - For initial build
 `npm run build`
 
 - Start the app in dev mode(Hot reloading is enabled)
 `npm run dev`
 
-#####Prod mode
+##### Prod mode
 
 - Build and run the app
 `npm start`
 
-####To run test cases
+#### To run test cases
 `npm run test`
 
-####ESLint
+#### ESLint
 `npm run lint`

@@ -7,9 +7,8 @@
     "start": "node server/index.js",
     "dev": "webpack-dev-server --inline --hot && NODE_ENV=development && node server/index.js",
     "build": "webpack --mode production",
-    "lint": "eslint src/**/*.js --fix",
-    "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "lint": "eslint src/**/*.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

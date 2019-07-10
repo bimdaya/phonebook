@@ -1,0 +1,61 @@
+[{
+	"address": "TLL",
+	"avatar": "https://react.semantic-ui.com/images/avatar/small/rachel.png",
+	"contact_id": 1,
+	"email": "bim@gmail.com",
+	"first_name": "Bim",
+	"last_name": "Dayananda",
+	"phone": {
+		"home": "123456789",
+		"mobile": "123456789",
+		"work": "123456789"
+	}
+}, {
+	"address": "TLL",
+	"avatar": "https://react.semantic-ui.com/images/avatar/small/matthew.png",
+	"contact_id": 2,
+	"email": "mario@gmail.com",
+	"first_name": "Roshane",
+	"last_name": "Fernando",
+	"phone": {
+		"home": "123456789",
+		"mobile": "123456789",
+		"work": "123456789"
+	}
+}, {
+	"address": "NYK",
+	"avatar": "https://react.semantic-ui.com/images/avatar/small/lindsay.png",
+	"contact_id": 3,
+	"email": "duli@gmail.com",
+	"first_name": "Duli",
+	"last_name": "Dayananda",
+	"phone": {
+		"home": "123456789",
+		"mobile": "123456789",
+		"work": "123456789"
+	}
+}, {
+	"address": "NYK",
+	"avatar": "https://react.semantic-ui.com/images/avatar/small/elliot.jpg",
+	"contact_id": 4,
+	"email": "trues@gmail.com",
+	"first_name": "Sathya",
+	"last_name": "Amarasekara",
+	"phone": {
+		"home": "123456789",
+		"mobile": "123456789",
+		"work": "123456789"
+	}
+}, {
+	"address": "SL",
+	"avatar": "https://react.semantic-ui.com/images/avatar/small/jenny.jpg",
+	"contact_id": 5,
+	"email": "soma@gmail.com",
+	"first_name": "Soma",
+	"last_name": "Dayananda",
+	"phone": {
+		"home": "123456789",
+		"mobile": "123456789",
+		"work": "123456789"
+	}
+}]
